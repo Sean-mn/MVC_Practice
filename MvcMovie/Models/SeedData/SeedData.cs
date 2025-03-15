@@ -5,10 +5,10 @@ namespace MvcMovie.Models
 {
     public static class SeedData
     {
-        public static void Initialize(IServiceProvider serviceProvieder)
+        public static void Initialize(IServiceProvider serviceProvider)
         {
             using (var context = new MvcMovieContext(
-                serviceProvieder.GetRequiredService<
+                serviceProvider.GetRequiredService<
                     DbContextOptions<MvcMovieContext>>()))
             {
                 // Look for any Movie
